@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Guess That Song</title>
+        <link type="text/CSS" rel="stylesheet" href="styles/style.css"
+        media="screen">
+    </head>
+    <body>
+        <h1>Guess That Song!</h1>
+        <h2>Try to guess the song and the artist!</h2>
+        <h3>The less time you need to identify the song, the more points you'll score!</h3>
+        <div id = border>
+        <div id = banner>
+            <table>
+                <tr>
+                    <td>THIS IS WHERE THE MUSIC PLAYER WILL SIT?</td>
+                </tr>
+                <tr>
+                    <form method = "post" enctype="multipart/form-data" action="processGuess.php">
+                        <td><php?><p>Guess Song: <input type="text" name="songGuess"></p></php></td>
+                        <td><php?><p>Guess Artist: <input type="text" name="artistGuess"></p></php></td>
+                        <input type="submit">
+                        
+                    </form>
+                </tr>
+                <tr>
+                    <td><button= onclick="moreTime()">Click here for more time!</button></td>
+                </tr>
+            </table>
+        </div>
+        </div>
+    </body>
+</html>
