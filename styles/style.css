@@ -3,3 +3,20 @@ h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+table{
+    border: solid;
+    margin: 10%;
+    margin-bottom: 20%;
+}
+td{
+    padding: 0.5em;
+    padding-right: 5em;
+  }
