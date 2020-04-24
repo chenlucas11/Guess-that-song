@@ -1,39 +1,51 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Guess That Song</title>
+    <link rel="shortcut icon" href=🎶>
     <link type="text/CSS" rel="stylesheet" href="styles/style.css" media="screen">
 </head>
 
-<body>
-    <h1>Guess That Song!</h1>
-    <h2>Try to guess the song and the artist!</h2>
-    <h3>The less time you need to identify the song, the more points you'll score!</h3>
+<body id=top>
+    <!--HEADER-->
+    <div id=header>
+        <h1>
+            <a href="index.html" class="btn"> Guess That Song!</a>
+        </h1>
+    </div>
+
+    <!--RULES-->
+    <div id=rules>
+        <h2>Try to guess the name and artist of the song playing!</h2><br>
+        <h3>The less time you need to identify the song, the more points you'll score!</h3>
+    </div>
+
+    <!--PLAYER-->
+    <div id=player>
+        <iframe src="https://open.spotify.com/embed?uri=spotify:album:6FVK3km0FtSdGF4ZdWkrVH" width="300" height="80"
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+
+    <!--INPUT BOX-->
     <div id=border>
         <div id=banner>
-            <table>
-                <tr>
-                    <td><iframe src="https://open.spotify.com/embed/track/3ZWCWArPYr1v0iF763oSOz" width="300" height="80"
-                            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-                </tr>
-                <tr>
-                    <form method="post" enctype="multipart/form-data" action="processGuess.php">
-                        <td>
-                            <php?>
-                                <p>Guess Song: <input type="text" name="songGuess"></p>
-                                </php>
-                        </td>
-                        <td>
-                            <php?>
-                                <p>Guess Artist: <input type="text" name="artistGuess"></p>
-                                </php>
-                        </td>
-                <tr>
-                    <td><input type="submit"></td>
-                    <td><button onclick="moreTime()">Click here for more time!</button></td>
-                </tr>
-                </form>
-                </tr>
+            <table id=table>
+                <tbody>
+                    <tr>
+                        <form method="post" enctype="multipart/form-data" action="processGuess.php">
+                            <td class=cell>
+                                <p><input type="text" placeholder="Song" name="songName"></p>
+                            </td>
+                            <td class=cell>
+                                <p><input type="text" placeholder="Artist" name="artistName"></p>
+                            </td>
+                            <input type="submit" style="display: none">
+                        </form>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>

@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,12 +16,116 @@ h3{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
-table{
-    border: solid;
-    margin: 10%;
-    margin-bottom: 20%;
-}
 td{
-    padding: 0.5em;
-    padding-right: 5em;
-  }
+    padding: 1.5em;
+}
+
+/*----------
+HEADER
+------------*/
+
+#header {
+    background: gray;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#header .btn {
+    color: white;
+    background-color: #131633;
+    text-decoration: none;
+    padding: 20px 46px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.7;
+    border: 2px solid white;
+}
+
+#header .btn:hover {
+    background-color: #2196f3;
+}
+
+/*----------
+RULES
+------------*/
+
+#rules {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*----------
+PLAYER
+------------*/
+
+#player{
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*----------
+INPUT BOX
+------------*/
+
+#border {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#table {
+    max-width: 1000px;
+    margin: 10px 0;
+    font-size: 12pt;
+    min-width: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#table .cell input[type=text]{
+    width: 110%;
+    border: 2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+    text-align: center;
+}
+
+#table .cell input[type=text]:focus{
+    border-color:rgb(97, 176, 255);
+    box-shadow:0 0 8px 0 rgb(97, 176, 255);
+}
+
+@media(max-width:800px) {
+    #table .cell{
+        display: flex;
+    }
+    #table .cell input[type=text]{
+        width: 190%;
+    }
+}
