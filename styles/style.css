@@ -16,6 +16,10 @@ h3{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
+h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
 td{
     padding: 1.5em;
 }
@@ -122,9 +126,9 @@ INPUT BOX
     }
 }
 
-/*----------
-LEADERBOARD
-------------*/
+/*---------------
+LEADERBOARD LINK
+---------------*/
 
 #leaderboard {
     text-align: center;
@@ -136,4 +140,20 @@ LEADERBOARD
 
 #leaderboard a img{
     max-height: 50px;
+}
+/*--------------
+LEADERBOARD PAGE
+---------------*/
+
+table#leaderboard {
+    max-width: 1000px;
+    margin: 10px 0;
+    font-size: 12pt;
+    min-width: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    border-color: white;
+}
+table#leaderboard td {
+    text-emphasis-style: white;
 }
