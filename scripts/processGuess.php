@@ -8,6 +8,7 @@
     <h3>Your guess:</h3>
         <p>Song Name: <?php echo $songName; ?></p>
         <p>Artist Name: <?php echo $artistName; ?></p>
+        <p>Time Elapsed: <?php echo $time; ?></p>
     <h3>Answers:</h3>
         <p>Song Name: <?php echo $songName; ?></p>
         <p>Artist Name: <?php echo $artistName; ?></p>
