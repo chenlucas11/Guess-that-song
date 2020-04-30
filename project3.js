@@ -7,7 +7,7 @@ var leaderboard = function(score){
             for(var x = i; x < 11; x++){
                 score = temp;
                 temp = document.getElementById(i+1).innerHTML;
-                document.getElementById(i+1).innerHTML = score;// Check in morn
+                document.getElementById(i+1).innerHTML = score;
             }
         i = 11;
         }
