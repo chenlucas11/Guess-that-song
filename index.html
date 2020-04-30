@@ -10,7 +10,7 @@
     <title>SongGuessr</title>
     <link rel="shortcut icon" href="files/note.png">
     <link type="text/CSS" rel="stylesheet" href="styles/style.css" media="screen">
-    <script src="main.js"></script>
+    <script src="project3.js"></script>
 </head>
 
 <body id=body>
@@ -39,14 +39,14 @@
             <table id=table>
                 <tbody>
                     <tr>
-                        <form method="post" enctype="multipart/form-data"></form>
+                        <form id="input-form">
                             <td class=cell>
                                 <p><input type="text" placeholder="Song" name="songName"></p>
                             </td>
                             <td class=cell>
                                 <p><input type="text" placeholder="Artist" name="artistName"></p>
                             </td>
-                            <input type="submit" style="display: none" onclick="processGuess()">
+                            <input type="submit" class="btn btn-primary" style="display: none" onclick="processGuess()">
                         </form>
                     </tr>
                 </tbody>

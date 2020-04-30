@@ -55,3 +55,6 @@ var isSongCorrect = function(song){
     }
 }
 
+var processGuess = function(){
+    
+}
