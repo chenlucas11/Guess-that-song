@@ -37,4 +37,21 @@ var getArtist = function(){
         return artist;
 }
 
+var isArtistCorrect = function(artist){
+    if(artist == getArtist()){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+var isSongCorrect = function(song){
+    if(song = getSong()){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
 
