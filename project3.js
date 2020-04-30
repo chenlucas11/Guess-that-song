@@ -15,15 +15,26 @@ var leaderboard = function(score){
             i++;
         }
     }
-
-    var getSong = function(){
-        var request = new XMLHttpRequest();
-        request.open("Get", "https://api.spotify.com/v1/tracks/{id}", true);
-        request.onload = function(){
-            var data = JSON.parse(this.response);
-            var name = data.name;
-            var artist = data.artists;
-        }
-    }
-
 }
+
+var getSong = function(){
+    var request = new XMLHttpRequest();
+    request.open("Get", "https://api.spotify.com/v1/tracks/{id}", true);
+    request.onload = function(){
+        var data = JSON.parse(this.response);
+        var name = data.name;
+        }
+        return name;
+}
+
+var getArtist = function(){
+    var request = new XMLHttpRequest();
+    request.open("Get", "https://api.spotify.com/v1/tracks/{id}", true);
+    request.onload = function(){
+        var data = JSON.parse(this.response);
+        var artist = data.artists;
+        }
+        return artist;
+}
+
+
