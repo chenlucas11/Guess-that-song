@@ -56,5 +56,7 @@ var isSongCorrect = function(song){
 }
 
 var processGuess = function(){
-    
+    if(isArtistCorrect && isSongCorrect){
+        
+    }
 }
