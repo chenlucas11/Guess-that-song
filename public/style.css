@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+td {
+  padding: 1.5em;
+}
+
+/*----------
+BODY
+------------*/
+
+#body {
+  background-color: teal;
+}
+
+/*----------
+HEADER
+------------*/
+
+#header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+
+#header a img {
+  max-height: 150px;
+}
+
+/*----------
+RULES
+------------*/
+
+#rules {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+/*----------
+PLAYER
+------------*/
+
+#player {
+  padding-top: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*----------
+INPUT BOX
+------------*/
+
+#border {
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell input[type="text"] {
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.cell input[type="text"]:focus {
+  border-color: rgb(97, 176, 255);
+  box-shadow: 0 0 8px 0 rgb(97, 176, 255);
+}
+
+.guessbtn :hover {
+  opacity: 50%;
+}
+
+@media (max-width: 800px) {
+  .cell {
+    display: flex;
+  }
+}
+
+
+/*---------------
+SUBMISSION
+---------------*/
+
+#submit {
+  visibility: hidden;
+}
+
+#message {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: purple;
+}

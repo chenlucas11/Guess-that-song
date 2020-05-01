@@ -1,0 +1,88 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <!--TODO-->
+  <!--Setup leaderboard, form submission to javascript, spotify api setup, html/css improvement-->
+
+  <head>
+    <title>SongGuessr</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.glitch.com/306baf64-d581-4ccc-868e-939ea608bc5c%2Fnote.png?v=1588282513413"
+    />
+    <meta name="description" content="A song guessing game" />
+    <link
+      href="https://sp-bootstrap.global.ssl.fastly.net/8.0.0/sp-bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" media="screen" />
+  </head>
+
+  <body id="body">
+    <main>
+      <!--HEADER-->
+      <div id="header">
+        <a href="index.html">
+          <img
+            src="https://cdn.glitch.com/306baf64-d581-4ccc-868e-939ea608bc5c%2Fmusic.gif?v=1588282512972"
+            alt="headlogo"
+          />
+        </a>
+      </div>
+
+      <!--RULES-->
+      <div id="rules">
+        <h2>Try to guess the name and artist of the song playing!</h2>
+        <br />
+        <div>
+          <button class="btn btn-primary" id="login">Log in</button>
+          <a href="/logout" class="btn btn-secondary">Logout</a>
+          <div id="data-container">
+            <ol>
+              <!-- This is where we will append our data -->
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!--INPUT BOX-->
+
+      <div id="submit">
+        <h5 id="message"></h5>
+      </div>
+      
+      <div id="border">
+        <table id="table">
+          <form id="inputform" name="inputform">
+            <tr>
+              <td class="cell">
+              <input type="text" placeholder="Song" name="songName" />
+            </td>
+            <td class="cell">
+              <input type="text" placeholder="Artist" name="artistName" />
+            </td>
+            </tr>
+            <tr><td class="guessbtn"><input type="button" value="Guess" onclick="processGuess();" /></td>
+            <td class="guessbtn"><button onclick="window.location.reload();">Next</button></td>
+              </tr>
+          </form>
+        </table>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.1.min.js"
+      integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/client.js"></script>
+  </body>
+</html>

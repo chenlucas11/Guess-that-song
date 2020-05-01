@@ -1,37 +1,75 @@
-## Welcome to GitHub Pages
+Spotify Playground
+=========================
 
-You can use the [editor on GitHub](https://github.com/chenlucas11/Guess-that-song/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Written by [Arielle Vaniderstine](https://twitter.com/imariari)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+A basic Node app that integrates with the Spotify API. Explore different endpoints the API has to offer!
 
-### Markdown
+This app uses the *Client Credentials Flow* for authentication, which means you can only get non-user-specific data.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+-----
 
-```markdown
-Syntax highlighted code block
+## Getting Started
 
-# Header 1
-## Header 2
-### Header 3
+1. After registering your app at developer.spotify.com/dashboard, put your app's client ID and secret (which you can find in the Dashboard) into the `.env` file.
 
-- Bulleted
-- List
+2. Click on "Show Live" in Glitch and verify that your app works (you should see data in each of the coloured sections).
 
-1. Numbered
-2. List
+-----
 
-**Bold** and _Italic_ and `Code` text
+## Working with the Playground
 
-[Link](url) and ![Image](src)
-```
+- Navigate between files in Glitch's left panel.
+- See server logs by clicking "Status" at the top of the left panel.
+- Open the browser's **Developer Tools** by right-clicking and selecting **Inspect**.
+- Calls to the Spotify API live in **server.js**.
+- Calls to your own server and the rendering of the UI occur in **public/client.js**.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+-----
 
-### Jekyll Themes
+## Challenges
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/chenlucas11/Guess-that-song/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+#### Pink: Search for a Track
 
-### Support or Contact
+1. Change the song that shows up. *(Hint: look in server.js for the API call)*
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+2. Display the artist name in addition to the song name. *(Hint: look at the whole track object to find the artist name)*
+
+3. Make the title link to the song on Spotify. *(Hint: look at the whole track object to find the song URL)*
+
+#### Purple: Get a Category's Playlists
+
+1. Get the playlists for a different category! You can find other categories [here](https://beta.developer.spotify.com/console/get-browse-categories/)
+
+2. Show 10 playlists instead of 5.
+
+3. Different playlists are shown to users in different countries. Show the playlists from another country.
+
+#### Orange: Get Audio Features for a Track
+
+1. What track are these audio features for?
+
+2. There are more audio features available. Display 2 more features.
+
+3. Get the audio features for another track.
+
+#### Blue: Get an Artist
+
+1. Get another artist.
+
+2. Show the popularity value for the artist.
+
+3. Show the number of followers the artist has.
+
+#### Yellow: Get an Artist's Top Tracks
+
+1. Whose top tracks are these?
+
+2. Get the top tracks of another artist.
+
+3. Top Tracks vary by country. Which country are these top tracks for? Show the top tracks in another country.
+
+### Bonus!
+
+Use a different endpoint to get totally different data! *(Hint: look at [this repository](https://github.com/thelinmichael/spotify-web-api-node/) for examples of all the calls you can make)*
+
