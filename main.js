@@ -56,16 +56,18 @@ var isSongCorrect = function(song){
 }
 
 var processGuess = function(artist, song){
+    var song = document.input-form.songName.value;
+    var artist = document.input-form.artistName.value;
     if(isArtistCorrect(artist) && isSongCorrect(song)){
         document.write("<h2>Both Answers You Gave Are Correct!</h2>");
     }
-    if(isArtistCorrect(artist) && !isSongCorrect(song)){
+    else if(isArtistCorrect(artist) && !isSongCorrect(song)){
         document.write("<h2>You Got The Artist Correct, But Not The Song Name!</h2>");
     }
-    if(!isArtistCorrect(artist) && isSongCorrect(song)){
+    else if(!isArtistCorrect(artist) && isSongCorrect(song)){
         document.write("<h2>You Got The Song Name Correct, But Not The Artist!</h2>");
     }
-    if(!isArtistCorrect(artist) && !isSongCorrect(song)){
+    else if(!isArtistCorrect(artist) && !isSongCorrect(song)){
         document.write("<h2>You Got Neither Correct!</h2>");
     }
 }
