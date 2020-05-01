@@ -24,6 +24,13 @@ td{
     padding: 1.5em;
 }
 
+li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    
+}
+
 /*----------
 BODY
 ------------*/
@@ -140,20 +147,4 @@ LEADERBOARD LINK
 
 #leaderboard a img{
     max-height: 50px;
-}
-/*--------------
-LEADERBOARD PAGE which unfortunately doesnt seem impacted by this code but whatever for now
----------------*/
-
-table#leaderboard {
-    max-width: 1000px;
-    margin: 10px 0;
-    font-size: 12pt;
-    min-width: 400px;
-    border-radius: 20px;
-    overflow: hidden;
-    border-color: white;
-}
-table#leaderboard td {
-    text-emphasis-style: white;
 }
