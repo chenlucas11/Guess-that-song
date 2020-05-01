@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SongGuessr</title>
+    <link rel="shortcut icon" href="files/note.png">
+    <link type="text/CSS" rel="stylesheet" href="styles/style.css" media="screen">
+    <script src="main.js"></script>
+</head>
+
+<body id=body>
+    <!--HEADER-->
+    <div id=header>
+        <a href="index.html">
+            <img src="files/music.gif" alt="headlogo"/>
+        </a>
+    </div>
+
+    <!--RULES-->
+    <div id=rules>
+        <h2>Try to guess the name and artist of the song playing!</h2><br>
+    </div>
+
+    <div id=player>
+        <iframe src="https://open.spotify.com/embed/track/0ByMNEPAPpOR5H69DVrTNy" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+     <!--INPUT BOX-->
+     <div id=border>
+        <div id=banner>
+            <table id=table>
+                <tbody>
+                    <tr>
+                        <form id="inputform">
+                            <td class=cell>
+                                <p><input type="text" placeholder="Song" name="songName"></p>
+                            </td>
+                            <td class=cell>
+                                <p><input type="text" placeholder="Artist" name="artistName"></p>
+                            </td>
+                            <input type="submit" class="btn btn-primary" style="display: none" onclick="processSong9()">
+                        </form>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id=rules>
+        <h4>Hit enter to submit your guess!</h4>
+    </div>
