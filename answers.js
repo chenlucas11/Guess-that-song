@@ -1,6 +1,10 @@
 var processSong10 = function(){
-    var guessSong = document.getElementById("songName");
-    var guessArtist = document.getElementById("artistName");
+    //var guessSong = document.getElementById("songName");
+    //var guessArtist = document.getElementById("artistName");
+    var x = document.getElementById("inputform10");
+    var guessSong = x.elements[1].value;
+    var guessArtist = x.elements[0].value;
+    document.write(guessArtist);
     var realSong = "Love Somebody";
     var realArtist = "Maroon 5"
     if((guessSong == realSong) && (guessArtist == realArtist)){
