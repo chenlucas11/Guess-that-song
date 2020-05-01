@@ -1,6 +1,6 @@
 var processSong10 = function(){
-    var guessSong = document.input-form['songName'].value;
-    var guessArtist = document.input-form.artistName.value;
+    var guessSong = document.getElementById("songName");
+    var guessArtist = document.getElementById("artistName");
     var realSong = "Love Somebody";
     var realArtist = "Maroon 5"
     if((guessSong == realSong) && (guessArtist == realArtist)){
@@ -18,8 +18,8 @@ var processSong10 = function(){
 }
 
 var processSong9 = function(){
-    var guessSong = document.input-form.songName.value;
-    var guessArtist = document.input-form.artistName.value;
+    var guessSong = document.getElementById("songName");
+    var guessArtist = document.getElementById("artistName");
     var realSong = "Don't Stop The Music";
     var realArtist = "Rihanna"
     if((guessSong == realSong) && (guessArtist == realArtist)){
@@ -37,8 +37,8 @@ var processSong9 = function(){
 }
 
 var processSong8 = function(){
-    var guessSong = document.input-form.songName.value;
-    var guessArtist = document.input-form.artistName.value;
+    var guessSong = document.getElementById("songName");
+    var guessArtist = document.getElementById("artistName");
     var realSong = "Whatcha Say";
     var realArtist = "Jason Derulo"
     if((guessSong == realSong) && (guessArtist == realArtist)){
@@ -56,8 +56,8 @@ var processSong8 = function(){
 }
 
 var processSong7 = function(){
-    var guessSong = document.input-form.songName.value;
-    var guessArtist = document.input-form.artistName.value;
+    var guessSong = document.getElementById("songName");
+    var guessArtist = document.getElementById("artistName");
     var realSong = "Pompeii";
     var realArtist = "Bastille"
     if((guessSong == realSong) && (guessArtist == realArtist)){
@@ -75,8 +75,8 @@ var processSong7 = function(){
 }
 
 var processSong6 = function(){
-    var guessSong = document.input-form.songName.value;
-    var guessArtist = document.input-form.artistName.value;
+    var guessSong = document.getElementById("songName");
+    var guessArtist = document.getElementById("artistName");
     var realSong = "Single Ladies (Put a Ring on It";
     var realArtist = "Beyoncé"
     if((guessSong == realSong) && (guessArtist == realArtist)){
@@ -94,8 +94,8 @@ var processSong6 = function(){
 }
 
 var processSong5 = function(){
-    var guessSong = document.input-form.songName.value;
-    var guessArtist = document.input-form.artistName.value;
+    var guessSong = document.getElementById("songName");
+    var guessArtist = document.getElementById("artistName");
     var realSong = "Fireflies";
     var realArtist = "Owl City"
     if((guessSong == realSong) && (guessArtist == realArtist)){
@@ -113,8 +113,8 @@ var processSong5 = function(){
 }
 
 var processSong4 = function(){
-    var guessSong = document.input-form.songName.value;
-    var guessArtist = document.input-form.artistName.value;
+    var guessSong = document.getElementById("songName");
+    var guessArtist = document.getElementById("artistName");
     var realSong = "I Gotta Feeling";
     var realArtist = "Black Eyed Peas"
     if((guessSong == realSong) && (guessArtist == realArtist)){
@@ -132,8 +132,8 @@ var processSong4 = function(){
 }
 
 var processSong3 = function(){
-    var guessSong = document.input-form.songName.value;
-    var guessArtist = document.input-form.artistName.value;
+    var guessSong = document.getElementById("songName");
+    var guessArtist = document.getElementById("artistName");
     var realSong = "Party In The USA";
     var realArtist = "Miley Cyrus"
     if((guessSong == realSong) && (guessArtist == realArtist)){
@@ -151,8 +151,8 @@ var processSong3 = function(){
 }
 
 var processSong2 = function(){
-    var guessSong = document.input-form.songName.value;
-    var guessArtist = document.input-form.artistName.value;
+    var guessSong = document.getElementById("songName");
+    var guessArtist = document.getElementById("artistName");
     var realSong = "Hey, Soul Sister";
     var realArtist = "Train"
     if((guessSong == realSong) && (guessArtist == realArtist)){
@@ -170,8 +170,8 @@ var processSong2 = function(){
 }
 
 var processSong1 = function(){
-    var guessSong = document.input-form.songName.value;
-    var guessArtist = document.input-form.artistName.value;
+    var guessSong = document.getElementById("songName");
+    var guessArtist = document.getElementById("artistName");
     var realSong = "Replay";
     var realArtist = "Iyaz"
     if((guessSong == realSong) && (guessArtist == realArtist)){
