@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-
-<html lang="en" dir="ltr">
-    <script src="main.js"></script>
-<!--TODO-->
-<!--Setup leaderboard, form submission to javascript, spotify api setup, html/css improvement-->
-
+<script src="answers.js"></script>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,36 +22,30 @@
         <h2>Try to guess the name and artist of the song playing!</h2><br>
     </div>
 
-    <!--PLAYER-->
     <div id=player>
-        <iframe src="https://open.spotify.com/embed?uri=spotify:playlist:4AlUCONRdk4Jhfk1Gyb3LY" width="300" height="80"
-            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/track/5vlEg2fT4cFWAqU5QptIpQ" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
-
-    <!--INPUT BOX-->
-    <div id=border>
+     <!--INPUT BOX-->
+     <div id=border>
         <div id=banner>
             <table id=table>
                 <tbody>
                     <tr>
-                        <form id="inputform0">
+                        <form id="inputform1">
                             <td class=cell>
                                 <p><input type="text" placeholder="Song" name="songName"></p>
                             </td>
                             <td class=cell>
                                 <p><input type="text" placeholder="Artist" name="artistName"></p>
                             </td>
-                            <input type="submit" class="btn btn-primary" style="display: none" onclick="processGuess()">
+                            <input type="submit" class="btn btn-primary" style="display: none" onclick="processSong1()">
                         </form>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-<div id=rules>
+    <div id=rules>
         <h4>Hit enter to submit your guess!</h4>
     </div>
-    <li><a href="songs.html">This Part Works!</a></li>
-</body>
-
-</html>
+    

@@ -16,8 +16,20 @@ h3{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
+h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
 td{
     padding: 1.5em;
+}
+
+li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+
+    
 }
 
 /*----------
@@ -121,19 +133,18 @@ INPUT BOX
         width: 190%;
     }
 }
-
-/*----------
-LEADERBOARD
-------------*/
-
-#leaderboard {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-}
-
-#leaderboard a img{
-    max-height: 50px;
-}
+  
+    ul li a {
+        list-style-type: none;
+        padding: 0.25em 1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-decoration: none; /* no underline */
+        background-color: #EBF5FF; /* pale bluish white */
+        color: #4312AE; /* dark blue */
+        border: 2px solid black;
+        border-top-left-radius: 1em 1em; /* rounded corner! */
+        border-top-right-radius: 1em 1em; /* another rounded corner! */
+        border-bottom-left-radius: 1em 1em;
+        border-bottom-right-radius: 1em 1em;
+    }
