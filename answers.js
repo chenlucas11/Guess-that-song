@@ -1,5 +1,5 @@
 var processSong10 = function(){
-    var guessSong = document.input-form.songName.value;
+    var guessSong = document.input-form['songName'].value;
     var guessArtist = document.input-form.artistName.value;
     var realSong = "Love Somebody";
     var realArtist = "Maroon 5"
