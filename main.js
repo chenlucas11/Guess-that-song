@@ -55,7 +55,7 @@ var isSongCorrect = function(song){
     }
 }
 
-var processGuess = function(artist, song){
+var processGuess = function(){
     var song = document.input-form.songName.value;
     var artist = document.input-form.artistName.value;
     if(isArtistCorrect(artist) && isSongCorrect(song)){
